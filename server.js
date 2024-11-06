@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.json()); // to parse JSON request bodies
 
 // Connect to MongoDB
-const dbURI = 'mongodb://localhost:27017/cloud-computing'; // replace with MongoDB Atlas URI if needed
+const dbURI = 'mongodb+srv://surajyelpale7:CPSAAEdX4IcZhxBR@clustersuraj.ip4xi.mongodb.net/'; // replace with MongoDB Atlas URI if needed
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
